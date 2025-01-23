@@ -1,0 +1,385 @@
+@font-face {
+    font-family: "Neue Haas Grotesk Display Black";
+    src: url("../font/NeueHaasDisplay-Black.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Neue Haas Grotesk Display Medium";
+    src: url("../font/NeueHaasDisplay-Mediu.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Neue Haas Grotesk Display Light";
+    src: url("../font/NeueHaasDisplay-Light.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Haas Grotesk Display Light Italic';
+    src: url('../font/NeueHaasDisplay-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Haas Grotesk Display Thin';
+    src: url('../font/NeueHaasDisplay-Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Neue Haas Grotesk Display Medium";
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    background-image: linear-gradient(#0000 75%, #fff), linear-gradient(#ffffff80, #ffffff80), url("../images/Grain_Latest.png"), url("../images/stars-stripes-3_1stars-stripes-3.webp");
+    background-position: 0 0, 0 0, 0 0, 50% 0;
+    background-repeat: repeat, repeat, repeat, no-repeat;
+    background-size: auto, auto, 300px, cover;
+}
+
+header {
+    height: auto;
+    width: 850px;
+    min-height: 4.5rem;
+    padding: 0 2rem 0 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #070735;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.links {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.links > a > img {
+    height: auto;
+    width: 250px;
+    vertical-align: middle;
+}
+
+.button {
+    background-color: #c41220;
+    color: #fff;
+    border: unset;
+    padding: .5rem 1.25rem;
+    border-radius: 50px;
+    font-family: "Neue Haas Grotesk Display Black";
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    max-width: 80rem;
+    margin-top: 2rem;
+    padding: 1rem 1rem 2rem 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    background-color: #070735;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+}
+
+.left {
+    height: min-content;
+    width: 60%;
+}
+
+.left > h1 {
+    letter-spacing: 1px;
+    text-shadow: 5px 8px 20px #000;
+    font-size: 5.8rem;
+    margin-top: 2rem;
+    margin-bottom: 14rem;
+    color: #fff;
+    font-family: "Neue Haas Grotesk Display Black";
+}
+
+.left > p {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    color: #fff;
+    font-family: "Neue Haas Grotesk Display Light";
+}
+
+.red {
+    color: #c41220;
+    text-shadow: unset;
+    font-family: "Neue Haas Grotesk Display Black";
+}
+
+.right {
+    height: min-content;
+    width: auto;
+    min-width: 40%;
+}
+
+.right > .quote {
+    color: #cececee0;
+    font-size: 2rem;
+    line-height: 2.3rem;
+    margin-left: 2rem;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-family: "Neue Haas Grotesk Display Light Italic";
+    font-style: italic;
+}
+
+.mainbutton {
+    background-color: #c41220;
+    color: #fff;
+    border: unset;
+    padding: 1rem 4rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    font-family: "Neue Haas Grotesk Display Black";
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    align-self: center;
+}
+
+.disclaimer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 15px;
+    line-height: 18px;
+    color: #cecece;
+    background-image: linear-gradient(#ffffff8c, #ffffff8c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    font-family: "Neue Haas Grotesk Display Light Italic";
+}
+
+.clickable {
+    color: #d3b136;
+    background-image: linear-gradient(#d3b136, #d3b136);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer {
+    height: 300px;
+    width: 100vw;
+    padding-top: 4rem;
+    background-color: #030327;
+}
+
+.footer {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.footer > img {
+    width: 250px;
+}
+
+.footer > strong {
+    color: #cecece;
+    background-image: linear-gradient(#ffffff8c, #ffffff8c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 2rem;
+    align-self: baseline;
+}
+
+#about {
+    height: 800px;
+    width: 100vw;
+    margin-top: 2rem;
+    background-color: #fff;
+    background-image: url('../images/Grain_Latest.png');
+    background-position: 0 0;
+    background-size: 300px;
+    border-top: 4px solid #c41220;
+}
+
+.about {
+    height: 100%;
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about > div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about > div > div > h1 {
+    color: #c41220;
+    font-size: 4.5rem;
+    line-height: 4.6rem;
+    margin-bottom: 2rem;
+}
+
+.about > div > div > div {
+    max-width: 700px;
+    background-color: #070734;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.about > div > div > div > h1 {
+    color: #d3b136;
+}
+
+.about > div > div > div > p {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.about > div > img {
+    width: 400px;
+}
+
+@media (max-width: 900px) {
+    header {
+        min-height: unset;
+        width: calc(90vw - 1rem);
+        padding: unset;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-bottom: unset;
+        flex-direction: column;
+        border-radius: 30px;
+    }
+
+    header > .links > a:not(:first-child) {
+        display: none;
+    }
+
+    header > button {
+        display: none;
+    }
+
+    main {
+        width: calc(90vw - 2rem - 2rem);
+        margin-top: 1rem;
+        border-radius: 30px;
+    }
+
+    main > .container {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .left > h1 {
+        font-size: 2.6rem;
+        line-height: 3rem;
+        text-shadow: none;
+        margin-bottom: 1rem;
+    }
+
+    .left > p {
+        font-size: 1.75rem;
+        line-height: 1.85rem;
+    }
+
+    .right > img {
+        margin-top: 1rem;
+        width: 80%;
+        align-self: center;
+    }
+
+    .right > .quote {
+        padding-top: unset;
+        margin-left: unset;
+        padding-bottom: 30px;
+    }
+
+    .mainbutton {
+        margin-left: -1rem;
+        margin-bottom: 1rem;
+    }
+
+    .disclaimer {
+        padding-left: unset;
+        padding-right: unset;
+    }
+
+    #about {
+        height: auto;
+        margin-bottom: 1rem;
+        border: unset;
+    }
+
+    .about > div {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .about > div > div {
+        margin-top: 1rem;
+    }
+
+    .about > div > div > h1 {
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .about > div > div > div {
+        margin-bottom: unset;
+    }
+
+    .about > div > img {
+        width: 80vw;
+    }
+
+    footer {
+        height: auto;
+        padding-bottom: 1rem;
+    }
+
+    .footer {
+        max-width: 85vw;
+    }
+}
